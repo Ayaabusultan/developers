@@ -1,5 +1,9 @@
 function Jobs{
+<<<<<<< HEAD
   this.jposts=[];
+=======
+  this.jposts = [];
+>>>>>>> 7d32f2e78a09a8c55015e606a0bc2e5c12f8391a
 }
 
 Jobs.prototype.addJob=function(job){
@@ -13,7 +17,7 @@ Jobs.prototype.removeJob=function(job){
 }
 
 
-  function JobPosting{
+function JobPosting {
   this.companyName;
   this.title;
   this.difficulty;
@@ -36,17 +40,28 @@ Developers.prototype.removeDeveloper=function(developer){
 }
 
 function Developer{
+<<<<<<< HEAD
   this.fname=fname;
   this.lname=lname;
   this.title=title;
   this.hourluRate=hRate;
   this.experience=experience;
   this.skills=skillsRequire;
+=======
+  this.name;
+  this.email;
+  this.resume;
+  this.skills;
+  this.hourlyCost;
+  this.experience;
+>>>>>>> 7d32f2e78a09a8c55015e606a0bc2e5c12f8391a
 
 }
 var newdevloper;
 $(document).ready(function(){
+<<<<<<< HEAD
 
+<<<<<<< HEAD
   // company click function to take form inputs
  $("#apply").click(function(){
 
@@ -74,4 +89,40 @@ $
 
 
 
+=======
+
+  $("#submit").click(function(){
+
+    var comName = $("#com-name").val();
+    var comEmail= $("#com-email").val();
+    var difficulty = $("#difficulty").val();
+    var joblocation = $("#location").val();
+    var jobCondition = $("#condition").val();
+    var jobDescription = $("#description").val();
+    var jobCondition = $("#condition").val();
+
+    var skills =[];
+    $("input:checkbox[name=skills]:checked").each(function(){
+     var skillsRequired = $(this).val();
+     skills.push(skillsRequired);
+     // $('#responses').append( skillsRequired  + "<br>");
+    });
+     var moreSkills =  $("#skills").val();
+     skills.push(moreSkills);
+
+
+
+  });
+
+
+
+
+
+
+
+
+=======
+  
+>>>>>>> b3bfe55d4e16e70b5160e9c188583575886addd5
+>>>>>>> 7d32f2e78a09a8c55015e606a0bc2e5c12f8391a
 });
