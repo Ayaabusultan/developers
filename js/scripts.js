@@ -39,29 +39,20 @@ Developers.prototype.removeDeveloper=function(developer){
 
 }
 
-function Developer{
-<<<<<<< HEAD
+function Developer(fname,lname,title,hRate,experience,skillsRequire){
+
   this.fname=fname;
   this.lname=lname;
   this.title=title;
   this.hourluRate=hRate;
   this.experience=experience;
   this.skills=skillsRequire;
-=======
-  this.name;
-  this.email;
-  this.resume;
-  this.skills;
-  this.hourlyCost;
-  this.experience;
->>>>>>> 7d32f2e78a09a8c55015e606a0bc2e5c12f8391a
+
 
 }
 var newdevloper;
 $(document).ready(function(){
-<<<<<<< HEAD
 
-<<<<<<< HEAD
   // company click function to take form inputs
  $("#apply").click(function(){
 
@@ -81,6 +72,7 @@ $(document).ready(function(){
                   });
 
    newdevloper=new Developer(fname,lname,title,hourlyRate,experience,skills);
+   
  });
 
 $
@@ -122,7 +114,7 @@ $
 
 
 =======
-  
+
 >>>>>>> b3bfe55d4e16e70b5160e9c188583575886addd5
 >>>>>>> 7d32f2e78a09a8c55015e606a0bc2e5c12f8391a
 });
