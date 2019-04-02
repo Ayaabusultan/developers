@@ -13,12 +13,12 @@ Jobs.prototype.removeJob=function(job){
 }
 
 
-  function JobPosting{
-    this.companyName;
-    this.title;
-    this.difficulty;
-    this.description;
-    this.skillsRequire=[];
+function JobPosting {
+  this.companyName;
+  this.title;
+  this.difficulty;
+  this.description;
+  this.skillsRequire=[];
 }
 
 function Developers{
