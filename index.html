@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="shortcut icon" type="image/png" href=""/>
+    <title>Developer Job Postings</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Developer Job Postings</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" id="posting-btn" class="btn btn-warning">Post A new Job Listing</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" id="apply" class="btn btn-success">Apply For A Job</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="alert alert-success">
+            <h4>Entry Level Jobs</h4>
+            <h6 class="alert-heading"><span id="bg-post-title"></span></h6>
+            <p><span id="bg-post-body"></span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="alert alert-info">
+            <h4>Intermediate Level Jobs</h4>
+            <h6 class="alert-heading"><span id="int-post-title"></span></h6>
+            <p><span id="int-post-body"></span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="alert alert-primary">
+            <h4>Advanced Level Jobs</h4>
+            <h6 class="alert-heading"><span id="adv-post-title"></span></h6>
+            <p><span id="adv-post-body"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
