@@ -45,13 +45,21 @@ function Developer{
 
 }
 
+
+
+
+
+
+
+
+
 $(document).ready(function(){
-<<<<<<< HEAD
 
 
   $("#submit").click(function(){
 
     var comName = $("#com-name").val();
+    var jobTitle = $("#job-title").val();
     var comEmail= $("#com-email").val();
     var difficulty = $("#difficulty").val();
     var joblocation = $("#location").val();
@@ -62,12 +70,24 @@ $(document).ready(function(){
     var skills =[];
     $("input:checkbox[name=skills]:checked").each(function(){
      var skillsRequired = $(this).val();
+     $("#bg-skills").text("<li>"+skillsRequired+"</li>");
+
+
      skills.push(skillsRequired);
      // $('#responses').append( skillsRequired  + "<br>");
     });
      var moreSkills =  $("#skills").val();
-     skills.push(moreSkills);
+     // skills.push(moreSkills);
 
+     if (difficulty === "easy"){
+       $("#bg-comp-name").text(comName);
+       $("#bg-title").text(jobTitle);
+       $("#bg-location").text(joblocation);
+       $("#bg-add-skills").text(moreSkills);
+       $("#bg-post-desc").text(jobDescription);
+       $("#bg-condition").text(jobCondition);
+
+     }
 
 
   });
@@ -77,9 +97,4 @@ $(document).ready(function(){
 
 
 
-
-
-=======
-  
->>>>>>> b3bfe55d4e16e70b5160e9c188583575886addd5
 });
