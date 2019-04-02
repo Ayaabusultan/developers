@@ -13,10 +13,13 @@
   margin: auto;
 }
 
+.jumbotron {
+  background: linear-gradient(90deg, rgba(140,219,2,1) 0%, rgba(9,121,117,1) 35%, rgba(0,196,255,1) 100%);
+}
+
 #home-heading {
   text-align: center;
 }
-
 
 #skills{
   height: 100px;
@@ -24,4 +27,9 @@
 
 #description{
     height: 100px;
+}
+
+#posting-btn, #apply {
+  padding: 15px;
+  font-size: 22px;
 }
