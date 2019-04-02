@@ -46,6 +46,7 @@ function Developer{
 }
 
 $(document).ready(function(){
+<<<<<<< HEAD
 
 
   $("#submit").click(function(){
@@ -78,4 +79,7 @@ $(document).ready(function(){
 
 
 
+=======
+  
+>>>>>>> b3bfe55d4e16e70b5160e9c188583575886addd5
 });
