@@ -8,11 +8,11 @@
   text-decoration: underline;
 }
 
-.jumbotron {
-  text-align: center;
-}
-
 .btn {
   display: block;
   margin: auto;
+}
+
+#home-heading {
+  text-align: center;
 }
