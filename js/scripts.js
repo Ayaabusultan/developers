@@ -1,5 +1,5 @@
 function Jobs{
-  this.jposts[];
+  this.jposts = [];
 }
 
 Jobs.prototype.addJob=function(job){
@@ -22,7 +22,7 @@ function JobPosting {
 }
 
 function Developers{
-  this.developers[];
+  this.developers=[];
 }
 
 Developers.prototype.addDeveloper=function(developer){
@@ -39,6 +39,9 @@ function Developer{
   this.name;
   this.email;
   this.resume;
+  this.skills;
+  this.hourlyCost;
+  this.experience;
 
 }
 
