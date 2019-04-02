@@ -13,7 +13,7 @@ Jobs.prototype.removeJob=function(job){
 }
 
 
-  function JobPosting{
+function JobPosting {
   this.companyName;
   this.title;
   this.difficulty;
