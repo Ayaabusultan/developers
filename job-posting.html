@@ -13,50 +13,53 @@
 
   </head>
   <body>
-    <div class="container">
-      <h1>Jop Posting</h1>
+    <div class="container con-props">
+      <div class="jumbotron home-heading">
+
+        <h1>Job Posting</h1>
       <br></br>
-        <form id="application">
+    </div>
+        <form id="application" action="index.html" method="GET">
 
           <div class="form-group">
-            <label for="name">Company Name</label>
+            <label class="labels" for="name">Company Name</label>
             <input id="com-name" class="form-control" type="text">
           </div>
 
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="email">Email</label>
             <input id="com-email" class="form-control" type="text">
-          </div>
+          </div> -->
 
           <div class="form-group">
-            <label for="title">Job Title</label>
+            <label class="labels" for="title">Job Title</label>
             <input id="job-title" class="form-control" type="text">
           </div>
 
 
           <div class="form-group">
-            <label>Job Difiiculty</label>
+            <label class="labels">Job Difiiculty</label>
             <select id="difficulty">
-              <option id="easy" value="entry">Entry level</option>
-              <option id="med" value="intermediate">Intermediate</option>
-              <option id="advanced" value="multiplying">Advanced</option>
+              <option  value="entry">Entry level</option>
+              <option  value="intermediate">Intermediate</option>
+              <option  value="advanced">Advanced</option>
 
             </select>
           </div>
 
           <div class="form-group">
-            <label for="title">Work Location</label>
+            <label class="labels" for="title">Work Location</label>
             <input id="location" class="form-control" type="text">
           </div>
 
           <div class="form-group">
-            <label for="condition">Work Condition</label>
+            <label class="labels" for="condition">Work Condition</label>
             <input id="condition" class="form-control" type="text">
           </div>
 
 
           <div class="form-group">
-            <label for="work-description">Work Description</label>
+            <label class="labels" for="work-description">Work Description</label>
             <input id="description" class="form-control" type="text">
           </div>
 
@@ -64,11 +67,11 @@
 
         <div class="form-group">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-4">
 
 
-            <label for="skills">Skills Needed</label>
-            
+            <label class="labels">Skills Needed</label><br>
+
             <input type="checkbox" name="skills" value="html"> HTML<br>
             <input type="checkbox" name="skills" value="css">CSS<br>
             <input type="checkbox" name="skills" value="Java Script">Java Script<br>
@@ -76,9 +79,9 @@
             <input type="checkbox" name="skills" value="asp.net"> Asp.net<br>
             <input type="checkbox" name="skills" value="react">React<br>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-8">
 
-            <label>Add more skills:</label>
+            <label class="labels">Add more skills:</label>
             <input id="skills" class="form-control" type="text">
           </div>
 
@@ -86,7 +89,10 @@
 
 
         <br><br>
-          <button id="apply"  type="text">Apply</button>
+
+          <!-- <a href="index.html" target="_blank"> -->
+            <button id="post" type="button" onClick="window.location='index.html'">Post</button>
+          <!-- </a> -->
           <button id="save"  type="button">Save</button>
 
         </form>
