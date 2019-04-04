@@ -7,10 +7,15 @@ Jobs.prototype.addJob=function(job){
 }
 
 Jobs.prototype.removeJob=function(job){
+<<<<<<< HEAD
   this.jposts.pop(job);
   Jobs() {
     this.jposts = [];
   }
+=======
+  this.jbosts.pop(job);
+  Jobs();
+>>>>>>> 634be1dd3123f28c823f557f6a4607e4d61ec850
 }
 
 Jobs.prototype.addJob = function(job){
@@ -86,8 +91,8 @@ var newdevloper;
 $(document).ready(function()  {
 
   // company click function to take form inputs
- $("#apply").click(function() {
-
+ $("#post-btn").click(function() {
+   
  });
 
  ///developer click function to take form inputs

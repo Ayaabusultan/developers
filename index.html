@@ -15,68 +15,171 @@
         <h1>Developer Job Postings</h1>
         <div class="row">
           <div class="col-md-6">
-            <a href="job-posting.html" target="_blank"><button type="button" id="posting-btn" class="btn btn-dark">Post A new Job Listing</button></a>
+            <button type="button" id="posting-btn" class="btn btn-dark">Post A new Job Listing</button>
           </div>
           <div class="col-md-6">
-            <a href="application.html" target="_blank"><button type="button" id="apply" class="btn btn-light">Apply For A Job</button></a>
+            <button type="button" id="apply" class="btn btn-light">Apply For A Job</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-form">
+        <h2>Application</h2>
+        <form id="job-app">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="app-first-name">First Name:</label>
+                <input type="text" class="form-control" id="app-first-name" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="app-last-name">Last Name:</label>
+                <input type="text" class="form-control" id="app-last-name" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="app-title">Which position are you applying for?</label>
+            <input type="text" class="form-control" id="app-title" required>
+          </div>
+          <div class="form-group">
+            <p>What skills do you have?</p>
+            <input type="checkbox" name="app-skills" value="CSS"> CSS<br>
+            <input type="checkbox" name="app-skills" value="HTML"> HTML<br>
+            <input type="checkbox" name="app-skills" value="JavaScript"> JavaScript<br>
+            <input type="checkbox" name="app-skills" value="PHP"> PHP<br>
+            <input type="checkbox" name="app-skills" value="asp.net"> asp.net<br>
+            <input type="checkbox" name="app-skills" value="React"> React<br>
+          </div>
+          <div class="form-group">
+            <label for="app-rate">How much do you charge hourly?</label>
+            <input type="number" class="form-control" id="app-rate" required>
+          </div>
+          <div class="form-group">
+            <label for="app-exp">Tell us about your previous experience:</label>
+            <input type="text" class="form-control" id="app-exp"  required>
+          </div>
+          <button type="click" class="btn btn-primary" id="app-btn">Submit application</button>
+        </form>
+      </div>
+
+      <div class="post-form">
+        <h2>Post a new job</h2>
+        <form>
+          <div class="form-group">
+            <label class="labels" for="name">Company Name</label>
+            <input id="com-name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="title">Job Title</label>
+            <input id="job-title" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label class="labels">Job Difiiculty</label>
+            <select id="difficulty">
+              <option  value="entry">Entry level</option>
+              <option  value="intermediate">Intermediate</option>
+              <option  value="advanced">Advanced</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="labels" for="title">Work Location</label>
+            <input id="location" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="condition">Work Condition</label>
+            <input id="condition" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="work-description">Work Description</label>
+            <input id="description" class="form-control" type="text">
+          </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-4">
+            <label class="labels">Skills Needed</label><br>
+            <input type="checkbox" name="skills" value="html"> HTML<br>
+            <input type="checkbox" name="skills" value="css">CSS<br>
+            <input type="checkbox" name="skills" value="Java Script">Java Script<br>
+            <input type="checkbox" name="skills" value="php"> PHP<br>
+            <input type="checkbox" name="skills" value="asp.net"> Asp.net<br>
+            <input type="checkbox" name="skills" value="react">React<br>
+          </div>
+          <div class="col-md-8">
+            <label class="labels">Add more skills:</label>
+            <input id="skills" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+        <br><br>
+        <button type="submit" id="post-btn" class="btn btn-primary" >Post</button>
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="entry-level">
+            <div class="alert alert-success">
+              <h4>Entry Level Jobs</h4>
+            </div>
+            <div class="alert alert-success">
+              <h5 class="alert-heading"><strong><span id="bg-title"></span></strong></h5>
+              <p>Company name: <span id="bg-comp-name"></span></p>
+              <p>Location: <span id="bg-location"></span></p>
+              <ul>
+                <span id="bg-skills"></span>
+              </ul>
+              <p>Additional skills: <span id="bg-add-skills"></span></p>
+              <p>Description: <span id="bg-post-desc"></span></p>
+              <p>Work condition: <span id="bg-condition"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="int-level">
+            <div class="alert alert-info">
+              <h4>Intermediate Level Jobs</h4>
+            </div>
+            <div class="alert alert-info">
+              <h5 class="alert-heading"><strong><span id="int-title"></span></strong></h5>
+              <p>Company name: <span id="int-comp-name"></span></p>
+              <p>Location: <span id="int-location"></span></p>
+              <ul>
+                <span id="int-skills"></span>
+              </ul>
+              <p>Additional skills: <span id="int-add-skills"></span></p>
+              <p>Description: <span id="int-post-desc"></span></p>
+              <p>Work condition: <span id="int-condition"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="adv-level">
+            <div class="alert alert-primary">
+              <h4>Advanced Level Jobs</h4>
+            </div>
+            <div class="alert alert-primary">
+              <h5 class="alert-heading"><strong><span id="adv-title"></span></strong></h5>
+              <p>Company name: <span id="adv-comp-name"></span></p>
+              <p>Location: <span id="adv-location"></span></p>
+              <ul>
+                <span id="adv-skills"></span>
+              </ul>
+              <p>Additional skills: <span id="adv-add-skills"></span></p>
+              <p>Description: <span id="adv-post-desc"></span></p>
+              <p>Work condition: <span id="adv-condition"></span></p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-4">
-          <div class="alert alert-success">
-            <h4>Entry Level Jobs</h4>
-          </div>
-          <div class="alert alert-success">
-            <h5 class="alert-heading"><strong><span id="bg-title"></span></strong></h5>
-            <p>Company name: <span id="bg-comp-name"></span></p>
-            <p>Location: <span id="bg-location"></span></p>
-            <ul>
-              <span id="bg-skills"></span>
-            </ul>
-            <p>Additional skills: <span id="bg-add-skills"></span></p>
-            <p>Description: <span id="bg-post-desc"></span></p>
-            <p>Work condition: <span id="bg-condition"></span></p>
-          </div>
-        </div>
-
-
-        <div class="col-md-4">
-          <div class="alert alert-info">
-            <h4>Intermediate Level Jobs</h4>
-          </div>
-          <div class="alert alert-info">
-            <h5 class="alert-heading"><strong><span id="int-title"></span></strong></h5>
-            <p>Company name: <span id="int-comp-name"></span></p>
-            <p>Location: <span id="int-location"></span></p>
-            <ul>
-              <span id="int-skills"></span>
-            </ul>
-            <p>Additional skills: <span id="int-add-skills"></span></p>
-            <p>Description: <span id="int-post-desc"></span></p>
-            <p>Work condition: <span id="int-condition"></span></p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="alert alert-primary">
-            <h4>Advanced Level Jobs</h4>
-          </div>
-          <div class="alert alert-primary">
-            <h5 class="alert-heading"><strong><span id="adv-title"></span></strong></h5>
-            <p>Company name: <span id="adv-comp-name"></span></p>
-            <p>Location: <span id="adv-location"></span></p>
-            <ul>
-              <span id="adv-skills"></span>
-            </ul>
-            <p>Additional skills: <span id="adv-add-skills"></span></p>
-            <p>Description: <span id="adv-post-desc"></span></p>
-            <p>Work condition: <span id="adv-condition"></span></p>
-          </div>
-        </div>
-
-        <div class="row">
+        <div class="col-md-6">
           <div class="alert alert-info">
             <h4>Developer Information:</h4>
           </div>
@@ -88,7 +191,6 @@
             <p>Position: <span id="app-position"></span></p>
           </div>
         </div>
-
       </div>
     </div>
   </body>
