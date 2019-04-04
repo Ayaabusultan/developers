@@ -48,6 +48,7 @@ function Developer(fname,lname,title,hRate,experience,skillsRequire){
   this.hourlyRate=hRate;
   this.experience=experience;
   this.skills=skillsRequire;
+  this.developers = [];
 }
 
 var textInfo=function(dev){
@@ -58,9 +59,7 @@ var textInfo=function(dev){
 }
 
 var devloper1,devs=new Developers();
-$(document).ready(function(){
-  this.developers = [];
-}
+
 
 Developers.prototype.addDeveloper = function(developer) {
   this.developers.push(developer);
@@ -85,7 +84,7 @@ $(document).ready(function()  {
 
   // company click function to take form inputs
  $("#post-btn").click(function() {
-   
+
  });
 
  ///developer click function to take form inputs

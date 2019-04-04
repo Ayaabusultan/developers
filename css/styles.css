@@ -21,23 +21,24 @@
   text-align: center;
 }
 
-#skills{
+#skills {
   height: 100px;
 }
 
-#description{
+#description {
     height: 100px;
 }
 
 #posting-btn, #apply {
   padding: 15px;
   font-size: 22px;
+  margin-bottom: 10px;
 }
-.labels{
+.labels {
   font-size: 20px;
   font-family:Wild West typeface;
   font-weight: bold;
 }
-.con-props{
+.con-props {
   padding:30px;
 }
