@@ -1,14 +1,21 @@
 function Jobs(){
-  this.jbosts=[];
+  this.jposts=[];
 }
 
 Jobs.prototype.addJob=function(job){
-  this.jbosts.push(job);
+  this.jposts.push(job);
 }
 
 Jobs.prototype.removeJob=function(job){
+<<<<<<< HEAD
+  this.jposts.pop(job);
+  Jobs() {
+    this.jposts = [];
+  }
+=======
   this.jbosts.pop(job);
   Jobs();
+>>>>>>> 634be1dd3123f28c823f557f6a4607e4d61ec850
 }
 
 Jobs.prototype.addJob = function(job){
@@ -121,6 +128,13 @@ $(document).ready(function()  {
         });
 
    var newDevloper = new Developer(fname,lname,title,hourlyRate,experience,skills);
+ });
+
+
+ $("#post-btn").click(function(){
+
+
+
  });
 
 
