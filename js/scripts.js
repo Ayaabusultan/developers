@@ -8,9 +8,7 @@ Jobs.prototype.addJob=function(job){
 
 Jobs.prototype.removeJob=function(job){
   this.jbosts.pop(job);
-  Jobs() {
-    this.jposts = [];
-  }
+  Jobs();
 }
 
 Jobs.prototype.addJob = function(job){
@@ -86,8 +84,8 @@ var newdevloper;
 $(document).ready(function()  {
 
   // company click function to take form inputs
- $("#apply").click(function() {
-
+ $("#post-btn").click(function() {
+   
  });
 
  ///developer click function to take form inputs
