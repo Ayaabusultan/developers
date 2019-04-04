@@ -1,30 +1,24 @@
-<<<<<<< HEAD
 function Jobs(){
   this.jbosts=[];
 }
 
 Jobs.prototype.addJob=function(job){
   this.jbosts.push(job);
-
 }
 
 Jobs.prototype.removeJob=function(job){
   this.jbosts.pop(job);
-=======
- Jobs() {
-  this.jposts = [];
-
+  Jobs() {
+    this.jposts = [];
+  }
 }
 
 Jobs.prototype.addJob = function(job){
   this.jposts.push(job);
-
 }
 
 Jobs.prototype.removeJob = function(job){
   this.jposts.pop(job);
->>>>>>> 4bd434a62be9a6d739f1c7fe51bb9a61ae7350f1
-
 }
 
 
@@ -38,13 +32,11 @@ function JobPosting() {
 }
 
 function Developers() {
-<<<<<<< HEAD
   this.developers=[];
 }
 
  Developers.prototype.addDeveloper=function(dev){
   this.developers.push(dev);
-
 }
 
 Developers.prototype.removeDeveloper=function(dev){
@@ -52,7 +44,6 @@ Developers.prototype.removeDeveloper=function(dev){
 }
 
 function Developer(fname,lname,title,hRate,experience,skillsRequire){
-
   this.fname=fname;
   this.lname=lname;
   this.title=title;
@@ -60,44 +51,39 @@ function Developer(fname,lname,title,hRate,experience,skillsRequire){
   this.experience=experience;
   this.skills=skillsRequire;
 }
+
 var textInfo=function(dev){
   $("#app-name").text(dev.fname+" "+dev.lname);
   $("#app-h").text(dev.hourlyRate);
   $("#app-position").text(dev.title);
   // alert("hi")
-
 }
+
 var devloper1,devs=new Developers();
 $(document).ready(function(){
-=======
   this.developers = [];
 }
 
 Developers.prototype.addDeveloper = function(developer) {
   this.developers.push(developer);
-
 }
 
 Developers.prototype.removeDeveloper = function(developer) {
   this.developers.pop(developer);
-
 }
 
 function Developer(fname,lname,title,hRate,experience,skillsRequire) {
-
   this.fname = fname;
   this.lname = lname;
   this.title = title;
   this.hourluRate = hRate;
   this.experience = experience;
   this.skills = skillsRequire;
-
 }
+
 var newdevloper;
 
 $(document).ready(function()  {
-
->>>>>>> 4bd434a62be9a6d739f1c7fe51bb9a61ae7350f1
 
   // company click function to take form inputs
  $("#apply").click(function() {
@@ -105,7 +91,6 @@ $(document).ready(function()  {
  });
 
  ///developer click function to take form inputs
-<<<<<<< HEAD
  $("#app-btn").click(function(event){
     var fname,lname,email,title,skills=[],hourlyRate,xperience;
          fname=$("input#app-first-name").val();
@@ -114,8 +99,8 @@ $(document).ready(function()  {
          hourlyRate=parseInt($("input#app-rate").val());
          experience= $("input#app-exp").val();
          $("input:checkbox[name=skills]:checked").each(function(){
-                      var skill = $(this).val();
-                      skills.push(skill);
+            var skill = $(this).val();
+            skills.push(skill);
           });
 
      devloper1=new Developer(fname,lname,title,hourlyRate,experience,skills);
@@ -123,12 +108,9 @@ $(document).ready(function()  {
 
      textInfo(devloper1);
      event.preventDefault();
-     
-
    });
 
 
-=======
  $("#app-btn").click(function() {
     var fname,lname,email,title,skills=[],hourlyRate,xperience;
        fname=$("input#app-first-name").val();
@@ -137,21 +119,16 @@ $(document).ready(function()  {
        hourlyRate=parseInt($("input#app-rate").val());
        experience= $("input#app-exp").val();
        $("input:checkbox[name=skills]:checked").each(function(){
-                    var skill = $(this).val();
-                    skills.push(skill);
-                  });
+          var skill = $(this).val();
+          skills.push(skill);
+        });
 
    var newDevloper = new Developer(fname,lname,title,hourlyRate,experience,skills);
->>>>>>> 4bd434a62be9a6d739f1c7fe51bb9a61ae7350f1
-
  });
 
 
-<<<<<<< HEAD
-=======
  ///Company click function to post the jop posting form
   $("#post").click(function(event){
->>>>>>> 4bd434a62be9a6d739f1c7fe51bb9a61ae7350f1
 
     event.preventDefault();
     show();
@@ -215,11 +192,4 @@ $(document).ready(function()  {
      }
      // $("#submit").onclick="location.href='index.html'
   });
-
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 4bd434a62be9a6d739f1c7fe51bb9a61ae7350f1
 });
