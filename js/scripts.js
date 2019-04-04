@@ -1,13 +1,13 @@
 function Jobs(){
-  this.jbosts=[];
+  this.jposts=[];
 }
 
 Jobs.prototype.addJob=function(job){
-  this.jbosts.push(job);
+  this.jposts.push(job);
 }
 
 Jobs.prototype.removeJob=function(job){
-  this.jbosts.pop(job);
+  this.jposts.pop(job);
   Jobs() {
     this.jposts = [];
   }
@@ -124,6 +124,13 @@ $(document).ready(function()  {
         });
 
    var newDevloper = new Developer(fname,lname,title,hourlyRate,experience,skills);
+ });
+
+
+ $("#post-btn").click(function(){
+
+
+
  });
 
 

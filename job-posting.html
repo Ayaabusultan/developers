@@ -20,23 +20,21 @@
       <br></br>
     </div>
         <form id="application" action="index.html" method="GET">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="labels" for="name">Company Name</label>
+                <input id="com-name" class="form-control" type="text">
+              </div>
+            </div>
 
-          <div class="form-group">
-            <label class="labels" for="name">Company Name</label>
-            <input id="com-name" class="form-control" type="text">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="labels" for="title">Job Title</label>
+                <input id="job-title" class="form-control" type="text">
+              </div>
+            </div>
           </div>
-
-          <!-- <div class="form-group">
-            <label for="email">Email</label>
-            <input id="com-email" class="form-control" type="text">
-          </div> -->
-
-          <div class="form-group">
-            <label class="labels" for="title">Job Title</label>
-            <input id="job-title" class="form-control" type="text">
-          </div>
-
-
           <div class="form-group">
             <label class="labels">Job Difiiculty</label>
             <select id="difficulty">
@@ -64,41 +62,29 @@
           </div>
 
 
-
-        <div class="form-group">
           <div class="row">
             <div class="col-md-4">
-
-
-            <label class="labels">Skills Needed</label><br>
-
-            <input type="checkbox" name="skills" value="html"> HTML<br>
-            <input type="checkbox" name="skills" value="css">CSS<br>
-            <input type="checkbox" name="skills" value="Java Script">Java Script<br>
-            <input type="checkbox" name="skills" value="php"> PHP<br>
-            <input type="checkbox" name="skills" value="asp.net"> Asp.net<br>
-            <input type="checkbox" name="skills" value="react">React<br>
+              <div class="form-group">
+                <label class="labels">Skills Needed</label><br>
+                <input type="checkbox" name="skills" value="html"> HTML<br>
+                <input type="checkbox" name="skills" value="css">CSS<br>
+                <input type="checkbox" name="skills" value="Java Script">Java Script<br>
+                <input type="checkbox" name="skills" value="php"> PHP<br>
+                <input type="checkbox" name="skills" value="asp.net"> Asp.net<br>
+                <input type="checkbox" name="skills" value="react">React<br>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <label class="labels">Add more skills:</label>
+              <input id="skills" class="form-control" type="text">
+            </div>
           </div>
-          <div class="col-md-8">
-
-            <label class="labels">Add more skills:</label>
-            <input id="skills" class="form-control" type="text">
-          </div>
-
-        </div>
-
-
-        <br><br>
-
-          <!-- <a href="index.html" target="_blank"> -->
-            <button id="post" type="button" onClick="window.location='index.html'">Post</button>
-          <!-- </a> -->
-          <button id="save"  type="button">Save</button>
+          <br><br>
+          <button id="post" type="button" onClick="window.location='index.html'">Post</button>
+          <button id="save" type="button">Save</button>
 
         </form>
-
-
-
+        <div class=""></div>
     </div>
   </body>
 </html>
